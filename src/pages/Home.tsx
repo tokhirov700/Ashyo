@@ -21,8 +21,10 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="home">
+      <div className="section">
       <Header />
+      </div>
       <BrandList brands={brands} />
     </div>
   );
