@@ -42,7 +42,7 @@ const Register: React.FC = () => {
       <Divider />
       <div style={{ textAlign: 'center' }}>
         <span>Allaqachon hisobingiz bormi? </span>
-        <Link to="/home">Kirish</Link>
+        <Link to="/login">Kirish</Link>
       </div>
     </div>
   );
