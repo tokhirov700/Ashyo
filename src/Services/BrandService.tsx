@@ -1,3 +1,5 @@
+import type { Brand } from "../types";
+
 export const fetchBrands = async (): Promise<Brand[]> => {
     try {
       const response = await fetch('https://api.ashyo.fullstackdev.uz/brands/all');
@@ -7,7 +9,7 @@ export const fetchBrands = async (): Promise<Brand[]> => {
       const data = await response.json();
       console.log(data); 
       return data;
-    } catch (error: any) {
+    } catch (error: unknown) {
       throw new Error(error.message || 'Tarmoqqa ulanishda xatolik');
     }
   };

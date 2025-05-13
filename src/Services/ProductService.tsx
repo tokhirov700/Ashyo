@@ -8,7 +8,7 @@ export const fetchProductsByBrand = async (brandId: number): Promise<Product[]> 
       }
       const data = await response.json();
       return data;
-    } catch (error: any) {
+    } catch (error: unknown) {
       throw new Error(error.message || 'Tarmoqqa ulanishda xatolik');
     }
   };
